@@ -11,7 +11,7 @@ const View = () => {
 
   const fetchSalaries = async () => {
     try {
-      const response = await axios.get(`https://attendlocalfront.vercel.app/api/salary/${id}/${user.role}`, {
+      const response = await axios.get(`https://attendlocalserv.vercel.app/api/salary/${id}/${user.role}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

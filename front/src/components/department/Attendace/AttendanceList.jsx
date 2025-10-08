@@ -13,7 +13,7 @@ const AttendanceList = () => {
     setAttendLoading(true);
     try {
       const response = await axios.get(
-        "https://attendlocalfront.vercel.app/api/attendance/attend/local",
+        "https://attendlocalserv.vercel.app/api/attendance/attend/local",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

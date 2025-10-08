@@ -19,7 +19,7 @@ const Add = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`https://attendlocalfront.vercel.app/api/leave/add`,leave, {
+      const response = await axios.post(`https://attendlocalserv.vercel.app/api/leave/add`,leave, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

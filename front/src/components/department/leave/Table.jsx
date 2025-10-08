@@ -11,7 +11,7 @@ const[filteredleaves,setfilteredleaves]=useState([])
   
     const fetchLeaves=async()=>{
  try{
-          const response=await axios.get("https://attendlocalfront.vercel.app/api/leave",{
+          const response=await axios.get("https://attendlocalserv.vercel.app/api/leave",{
             headers:{
               "Authorization":`Bearer ${localStorage.getItem('token')}`
             }
