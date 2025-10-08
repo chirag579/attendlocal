@@ -16,11 +16,7 @@ export const addProject = async (req, res) => {
 
     console.log(req.body);
 
-    if (!Title || !Client || !Address || !WoM || !startDate || !employeeIds.length) {
-      return res
-        .status(400)
-        .json({ success: false, error: "All required fields must be filled." });
-    }
+   
 
     // 1️⃣ Create the project
     const newProject = new Project({
