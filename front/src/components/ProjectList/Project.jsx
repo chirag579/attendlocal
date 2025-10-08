@@ -188,7 +188,7 @@ const { name, value, options } = e.target;
               className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
               
             >
-              <option value="">Select Employee</option>
+              {/* <option value="">Select Employee</option> */}
               {employees.map((emp) => (
                 <option key={emp._id} value={emp._id}>
                   {emp.employeeId}
