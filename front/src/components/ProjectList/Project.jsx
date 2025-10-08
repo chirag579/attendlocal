@@ -186,7 +186,7 @@ const { name, value, options } = e.target;
               onChange={handleChange}
              multiple
               className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
-              required
+              
             >
               <option value="">Select Employee</option>
               {employees.map((emp) => (
