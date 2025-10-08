@@ -12,7 +12,7 @@ const ProjectList = () => {
   const fetchProjects = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4000/api/Project/projectList`,
+        `https://attendlocalfront.vercel.app/api/Project/projectList`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -35,7 +35,7 @@ const ProjectList = () => {
   const handleTeam = async (employeeIds) => {
     try {
       const response = await axios.post(
-        `http://localhost:4000/api/Project/projectDetails`,
+        `https://attendlocalfront.vercel.app/api/Project/projectDetails`,
         { employeeIds },
         {
           headers: {

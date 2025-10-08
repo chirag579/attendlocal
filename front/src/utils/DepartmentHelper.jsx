@@ -25,7 +25,7 @@ const handleDelete = async (id)=>{
   if(confirm){
 try{
   
-        const response=await axios.delete(`http://localhost:4000/api/department/${id}`,{
+        const response=await axios.delete(`https://attendlocalfront.vercel.app/api/department/${id}`,{
           headers:{
             Authorization:`Bearer ${localStorage.getItem('token')}`
           }

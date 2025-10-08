@@ -13,7 +13,7 @@ const List = () => {
   // Fetch projects for a single employee by _id
   const fetchProjectsByEmployee = async (empId) => {
     try {
-      const response = await axios.get(`http://localhost:4000/api/employee/projects/${empId}`, {
+      const response = await axios.get(`https://attendlocalfront.vercel.app/api/employee/projects/${empId}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -34,7 +34,7 @@ const List = () => {
   const fetchEmployees = async () => {
     setEmpLoading(true);
     try {
-      const response = await axios.get("http://localhost:4000/api/employee", {
+      const response = await axios.get("https://attendlocalfront.vercel.app/api/employee", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -56,7 +56,7 @@ const List = () => {
                 <img
                   width={40}
                   className='rounded-full'
-                  src={`http://localhost:4000/${emp.userId.profileImage}`}
+                  src={`https://attendlocalfront.vercel.app/${emp.userId.profileImage}`}
                   alt={emp.userId.name}
                 />
               ) : null,

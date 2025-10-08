@@ -3,7 +3,7 @@ import axios from "axios";
 export const getEmployees = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:4000/api/Project",
+      "https://attendlocalfront.vercel.app/api/Project",
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -26,7 +26,7 @@ console.log(response);
 export const getEmployeesProjects = async () => {
   try {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://localhost:4000/api/project/projectList", {
+    const response = await axios.get("https://attendlocalfront.vercel.app/api/project/projectList", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -10,7 +10,7 @@ const [Emp,setEmp]=useState([])
 
    const fetch=async()=>{
  try{
-          const response=await axios.get("http://localhost:4000/api/attendance",{
+          const response=await axios.get("https://attendlocalfront.vercel.app/api/attendance",{
             headers:{
               "Authorization":`Bearer ${localStorage.getItem('token')}`
             }

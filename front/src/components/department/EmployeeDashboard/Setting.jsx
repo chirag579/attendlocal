@@ -24,7 +24,7 @@ const handleSubmit=async(e)=>{
   }else{
     try {
       const response=await axios.put(
-        "http://localhost:4000/api/setting/change-password",setting,{
+        "https://attendlocalfront.vercel.app/api/setting/change-password",setting,{
           headers:{
              Authorization:`Bearer ${localStorage.getItem("token")}`      
           },
